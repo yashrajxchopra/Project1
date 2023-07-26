@@ -4,45 +4,98 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div style="background: linear-gradient(to right, #ffcc00, #ff6699); width: 100%; padding: 12px;" class = "container colored-div">
+<div style=" height:5em ;width: 100%; padding: 12px; background-color: black;" class = "container colored-div nav-bar">
 
-    <ol style="display: flex; justify-content: space-between;" class="list-unstyled list-inline">
-        <li > <a class="list-group-item list-group-item-actio "  href="#">Home</a> </li>
-        <li> <a class="list-group-item list-group-item-actio" href="#">CV</a> </li>
-        <li> <a class="list-group-item list-group-item-actio" href="#">Contact</a> </li>
-        <li> <a class="list-group-item list-group-item-actio" href="#">About Us</a> </li>
+    <ol style="display: flex; justify-content: space-between;" class="list-unstyled hover ol-nav">
+        <li id="git"> <a class="list-group-item list-group-item-actio"href="https://www.github.com/yashrajxchopra" target="_blank"><i class="fa-brands fa-github fa-bounce"></i></i></a></li>
+        <li> <a style="color: black;"class="list-group-item list-group-item-actio nav-div" onmouseover="showHoverText()" href="#section2">About</a> </li>
+        <li> <a style="color: black;"class="list-group-item list-group-item-actio nav-div " href="#">Skills</a> </li>
+        <li> <a style="color: black;" class="list-group-item list-group-item-actio nav-div " href="#section2">Projects</a> </li>
+        <li> <a style="color: black;" class="list-group-item list-group-item-actio nav-div " href="#">Contact</a> </li>
     </ol>
+    </div>
+</div>
+
+
+<section id="section1">
+
+    <div class="container" id="intro-div" style="width: 100%; background-color: black; height: 51em;" >
+        <p id="hello"class="lead" style="color: gold; margin-left: 4em;margin-top: 3em;">Hello,</p>
+    <p class="lead text" style="font-size: 35px; color:white;margin-left: 6em;"><u>I am a full stack developer.</u></p>
+</div>
+</section>
+<section >
+    <div id="section2">
+<h1 style="color: white; margin: 0em 0em 0em 3em; font-size: 4em;"><b>About</b></h1>
+<div style="display: inline-block; margin-left: 5em; margin-top: 3em;"  class="right">
+    <h3 id="h3">UI/UX Designer & Web Developer.</h3>
+    <br/>
+    <p id="p2">I am a CSE undergraduate with strong programming skills 
+        and a passion for problem-solving. Seeking opportunities
+        to apply technical knowledge, learn new technologies, and
+        contribute to innovative projects in a dynamic team environment.
+        </p>
+  <!-- </div> -->
+  <div class="row">
+    <br/>
+    <ul id="ul1">
+      <li>
+        <strong>Birthday:</strong>
+        <span>16 Jan 2004</span>
+      </li>
+      <br/>
+      <li>
+        <strong>Website:</strong>
+        <span>www.example.com</span>
+      </li>
+      <br/>
+      <li>
+        <strong>Phone:</strong>
+        <span>+91xxxxxxxxxx</span>
+    </li>
+    <br/>
+    <li>
+      <strong>City:</strong>
+      <span>Mohali,PUNJAB</span>
+    </li>
+    <br/>
+  </ul>
+  <ul id="ul2">
+    <li>
+      <strong>Age:</strong>
+      <span>19</span>
+    </li>
+    <br/>
+    <li>
+      <strong>Degree:</strong>
+      <span>B.Tech(CSE) Pursuing</span>
+    </li>
+    <br/>
+    <li>
+      <strong>Email:</strong>
+      <span>email@example.com</span>
+    </li>
+    <br/>
+    <li>
+      <strong>Experiance:</strong>
+      <span>Fresher</span>
+    </li>
+  </ul>
+</div>
 
 </div>
-<div>
-    <div class="container" >
-        <p class="lead" style="color: grey; margin: 20px 0px 0px 0px; margin: 2em 0em 0em 0em;">Hello,</p>
-    </br>
-    <p class="lead"><u>I am full stack developer.</u></p>
-    <div id="img-div" class="image-container">
-        <img src = "https://drive.google.com/uc?export=view&id=1MnUDeIPS6XerrfSJV8ShwR3G-YbvAoWz" length = "200" width = "200" class="hover"/>
-    </div>
-</div>
-      
-    <div id="name-div">
-        <p><b>Yashraj Chopra</b></p>
-    </div>
+
+</section>
+
+
         
-        <h3>GitHub</h3>
-        <p>Visit my <a href = "https://github.com/yashrajxchopra" target = "_blank" >GitHub</a> account.</p>
-
-        <h4>Contact Me</h4>
-        <p>Email: yashuxchopra@gmail.com </p>
-        <p>Phone: (+91)787669303</p>
-
-        <audio loop="loop" autoplay controls>
-            <source src="j.mp3" type="audio/mpeg" />
-        </audio>
             
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
