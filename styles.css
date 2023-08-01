@@ -147,14 +147,79 @@ span{
 .html {width: 90%; background-color: gold;} 
 .css {width: 80%; background-color: gold;}
 .js {width: 65%; background-color: gold;} 
-.php {width: 60%; background-color: gold;}
+.c {width: 75%; background-color: gold;}
 
 .skill{
-  margin-top: 0em;
   color: white;
+  margin-top: 50px;
+  
 }
 .section3-div{
   background-color: #1a1a1a;
 }
+
+.input-box {
+  margin:auto 40px 6px;
+}
+
+input {
+  height: 36px;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background-color: #fafafa;
+  width:100%;
+  font-size:12px;
+  margin: 0;
+  padding: 9px 0 7px 8px;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+input#name:focus, input#password:focus {
+  border-color:#bbb;
+}
+
+.button-box {
+  display: block;
+  position: relative;
+  margin: 8px 40px;
+}
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding:0 8px; 
+  background: gold;
+  border:1px solid black;
+  color: black;
+  border-radius:3px;
+  
+  font-size: 14px;
+  height: 28px;
+  line-height: 26px;
+  outline: none;
+  white-space: nowrap;
+}
+.contact{
+  margin: 1em;
+  width: 25em;
+  margin-left: 12em;
+}
+.message{
+  height: 10em;
+  margin: 1em;
+  width: 50em;
+  margin-left: 7em;
+}
+.section4-div{
+  background-color: black;
+}
+.send{
+  margin-bottom: 5em;
+  width: 20em;
+  margin-left: 10em;
+}
+
+
 
 

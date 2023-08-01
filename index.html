@@ -14,7 +14,7 @@
         <li> <a style="color: black; border-radius: 3em;"class="list-group-item list-group-item-actio nav-div" onmouseover="showHoverText()" href="#section2">About</a> </li>
         <li> <a style="color: black;border-radius: 3em;"class="list-group-item list-group-item-actio nav-div " href="#section3">Skills</a> </li>
         <li> <a style="color: black;border-radius: 3em;" class="list-group-item list-group-item-actio nav-div " href="#section2">Projects</a> </li>
-        <li> <a style="color: black;border-radius: 3em;" class="list-group-item list-group-item-actio nav-div " href="#">Contact</a> </li>
+        <li> <a style="color: black;border-radius: 3em;" class="list-group-item list-group-item-actio nav-div " href="#section4">Contact</a> </li>
     </ol>
     </div>
 </div>
@@ -109,17 +109,52 @@
 
 <p class="skill">C/C++</p>
 <div class="container">
-  <div class="skills php">60%</div>
+  <div class="skills c">75%</div>
 </div>
 </div>
+<section id="section4">
+
+  <div class="form-wrap section4-div">
+    <h1 style="color: white; margin: 0em 0em 0em 3em; font-size: 4em;padding-top: 3em;"><b>Contact</b></h1>
+    <form class="form">
+
+      <div class="input-box">
+        <input class="contact" type="text" id="username" placeholder="Your Contact(Phone, Email)" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
+      </div>  
+
+      <div class="input-box message">
+        <input class="message" type="text" name="password" id="password" placeholder="Type your message" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
+      </div>  
+
+      <span class="button-box">
+        <button class="btn send" type="button" name="submit" onclick="sendMessage()">Send</button>
+      </span>  
+
+      
+    </form>
+  </div> <!-- Form-wrap end -->
+</div> <!-- Login-box end -->
 </section>
 
 
+
         
-            
+  <script>
+    function sendMessage() {
+  
+  var request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/1135819596226637947/fDrdLZD-X3XK8dOBTPHVeEtLJZSpHa9pbPPdBIMu3x35FTBXcTos_6DX65gbzq-WEv9G");
+  request.setRequestHeader('Content-type', 'application/json');
+  var params = {
+    content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+  }
+  request.send(JSON.stringify(params));
+}
+  </script>   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="./main.js"></script>
+
 </body>
 </html>
