@@ -1,5 +1,8 @@
 
+#intro-div{
+  
 
+}
 .hover-div {
   transition: background-color 0.3s ease;
 }
@@ -17,7 +20,7 @@
   justify-content: center;
   width: 8%;
   height: 3em;
-  margin-left: 75%;
+  margin-left: 60%;
 }
 button{
   border: #1a1a1a;
@@ -94,8 +97,8 @@ h5{
   }
   
   #p2{
-    font-style: italic !important;
-    color:  gold;
+    
+    color:  yellow;
     font-size: 20px;
     text-align: left;
   }
@@ -243,6 +246,7 @@ font-weight: 4em;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+
 }
 
 .layer {

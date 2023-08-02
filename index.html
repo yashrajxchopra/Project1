@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div style=" height:5em ;width: 100%; padding: 12px; background-color: black;position: fixed;" class = "container colored-div nav-bar">
+<div style=" height:5em ;width: 100%; padding: 12px; background-color: black;position: absolute;" class = "container colored-div nav-bar">
 
     <ol style="display: flex; justify-content: space-between;" class="list-unstyled hover ol-nav">
         <li id="git" style="border: 1px black; border-radius: 4em;"> <a  class="list-group-item list-group-item-actio" style="background-color: gold;"href="https://www.github.com/yashrajxchopra" target="_blank"><i class="fa-brands fa-github fa-bounce" style="color: black; font-size: 1.3em;"></i></a></li>
@@ -23,8 +23,10 @@
 <section id="section1">
 
     <div class="container" id="intro-div" style="width: 100%; background-color: black; height: 51em;" >
-        <p id="hello"class="lead" style="color: gold; font-weight: 800; margin-left: 4em;margin-top: 5em;">Hello,</p>
-    <p class="lead text" style="font-size: 35px; color:white;margin-left: 6em;font-weight: 800;"><u>I am a full stack developer.</u></p>
+      
+        <p id="hello"class="lead" style="color: gold; font-weight: 800; margin-left: 4em;margin-top: 5em;">Hi,</p>
+    <p class="lead text" style="font-size: 35px; color:white;margin-left: 6em;font-weight: 800;">I am Yashraj.</p>
+    <p class="lead text" style="font-size: 45px; color:gold;margin-left: 4.6em;font-weight: 800;">Full Stack Developer.</p>
     <div id="dwnld">
         <a href="https://drive.google.com/file/d/1MyvwDbM6LlSgRp7-aO2wlpjvULVvsHuH/view" target="_blank">
           <button class="btn btn-outline-light" style="font-size: 1.1em;">Download Resume</button>
@@ -78,11 +80,7 @@
       <strong>Email:</strong>
       <span>yashrajxchopra@gmail.com</span>
     </li>
-    <br/>
-    <li>
-      <strong>Experiance:</strong>
-      <span>Fresher</span>
-    </li>
+
   </ul>
 </div>
 
@@ -92,7 +90,7 @@
 
 <section id="section3">
   <div style="width: 100%; height:8em; background-color: black;"></div>
-    <div id="section3-div" style="width: 100%; height: 50em; background-color: black;">
+    <div id="section3-div" style="width: 100%; height: 50em; background-color: black;padding: 4em;">
       <h1 style="color: white; margin: 0em 0em 0em 3em; font-size: 4em;"><b>Skills</b></h1>
       <p style="color: white; font-size: 2em;">HTML</p>
       <div class="container">
@@ -142,7 +140,7 @@
                     <h3 style="color: white; font-weight: 20px;">Instagram Login Page</h3>
                     <p style="color: white;">This is clone of Instagram log-in page. For ethical hacking purposes.
                     </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/yashrajxchopra/beginner_projects/tree/main/IG%20Log-in%20page" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -161,7 +159,7 @@
       </div>  
 
       <div class="input-box message section4-div">
-        <input class="message" type="text" name="password" id="password" placeholder="Type your message" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
+        <input class="message" type="text" name="password" id="password" placeholder="Type your message(Don't put sensitive information)" maxlength="200" aria-required="true" autocapitalize="off" autocorrect="off" required>
       </div>  
 
       <span class="button-box">
@@ -178,12 +176,14 @@
     function sendMessage() {
   
   var request = new XMLHttpRequest();
-  request.open("POST", "https://discord.com/api/webhooks/1135819596226637947/fDrdLZD-X3XK8dOBTPHVeEtLJZSpHa9pbPPdBIMu3x35FTBXcTos_6DX65gbzq-WEv9G");
+  request.open("POST", "https://discord.com/api/webhooks/1136210462007099393/LrpXN1j9S5Z9Ceuip3B_i7fx8pXx8Yg0uAXrvQip09p2cgPhKVWmU550O6yZ_Oa_cSBY");
   request.setRequestHeader('Content-type', 'application/json');
   var params = {
     content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
   }
   request.send(JSON.stringify(params));
+  document.getElementById('username').value='';
+  document.getElementById('password').value='';
 }
   </script>   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
