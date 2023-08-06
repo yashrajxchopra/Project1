@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head><title>AJAX</title></head>
+    <head><title>AJAX</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
     <body>
-        <div id="myDiv">
+        <header>
+            <div style="margin:0;" class="container-fluid">
+                <div style="display: flex; justify-content: space-between; align-content: center;">
+                    <img id="logo" style="width: 5%;" src="https://cdn-icons-png.flaticon.com/512/3767/3767036.png" />
+                    <form style="margin-top: 20px;">
+                        <input id="search-text" style="height: 2.2em; border-radius: 2em; margin: 1em;" placeholder="City (Pincode)" type="text" />
+                        <i id="search-btn" style="font-size: 1.5em;" class="fa-solid fa-magnifying-glass"></i>
+                       
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+        <div id="my-div" style="width: 100%; height:150px;">
+        
+        </div>
+        <div id="map-div" style="width: 100%; height:50px;">
 
         </div>
         <script src="./main.js"></script>
